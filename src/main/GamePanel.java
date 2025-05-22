@@ -10,6 +10,6 @@ public class GamePanel extends JPanel {
 
         int xpos = 300;
         int ypos = 300;
-        g.drawRect(xpos, ypos, 150, 100);
+        g.fillRect(xpos, ypos, 150, 100);
     }
 }
