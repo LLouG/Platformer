@@ -1,5 +1,7 @@
 public class Game {
+    private GameWindow gameWindow;
+
     public  Game() {
-        System.out.println("Hi from Game()");
+        gameWindow = new GameWindow();
     }
 }
