@@ -3,13 +3,15 @@ import inputs.MouseInputs;
 
 import javax.swing.JPanel;
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 
 public class GamePanel extends JPanel {
+
     public GamePanel() {
+        MouseInputs mouseInputs = new MouseInputs();
+
         addKeyListener(new KeyboardInputs());
-        addMouseListener(new MouseInputs());
+        addMouseListener(mouseInputs);
+        addMouseMotionListener(mouseInputs);
     }
 
     public void paintComponent(Graphics g) {
