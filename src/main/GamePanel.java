@@ -17,8 +17,8 @@ public class GamePanel extends JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g); // this is basically cleaning up stuff from the previous frame
 
-        int xpos = 300;
-        int ypos = 300;
-        g.fillRect(xpos, ypos, 20, 20);
+        int xpos = 0;
+        int ypos = 0;
+        g.fillRect(300 + xpos, 300 + ypos, 20, 20);
     }
 }

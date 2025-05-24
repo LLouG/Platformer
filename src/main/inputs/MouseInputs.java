@@ -20,12 +20,10 @@ public class MouseInputs implements MouseListener, MouseMotionListener {
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        System.out.println("Mouse entered the screen");
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        System.out.println("Mouse left the screen");
     }
 
     // MOUSE MOTION
@@ -35,6 +33,5 @@ public class MouseInputs implements MouseListener, MouseMotionListener {
 
     @Override
     public void mouseMoved(MouseEvent e) {
-        System.out.println("Mouse moved");
     }
 }
