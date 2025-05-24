@@ -1,8 +1,13 @@
+import inputs.KeyboardInputs;
+
 import javax.swing.JPanel;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 public class GamePanel extends JPanel {
     public GamePanel() {
+        addKeyListener(new KeyboardInputs());
     }
 
     public void paintComponent(Graphics g) {
@@ -10,6 +15,6 @@ public class GamePanel extends JPanel {
 
         int xpos = 300;
         int ypos = 300;
-        g.fillRect(xpos, ypos, 150, 100);
+        g.fillRect(xpos, ypos, 20, 20);
     }
 }
