@@ -1,4 +1,5 @@
 import inputs.KeyboardInputs;
+import inputs.MouseInputs;
 
 import javax.swing.JPanel;
 import java.awt.*;
@@ -8,6 +9,7 @@ import java.awt.event.KeyListener;
 public class GamePanel extends JPanel {
     public GamePanel() {
         addKeyListener(new KeyboardInputs());
+        addMouseListener(new MouseInputs());
     }
 
     public void paintComponent(Graphics g) {
